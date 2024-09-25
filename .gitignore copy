@@ -1,0 +1,3 @@
+[submodule "NotesApp"]
+  path = NotesApp
+  url = <URL-of-your-submodule>
