@@ -1,0 +1,242 @@
+@import '../styles/variables.css';
+/* Adjust the path based on your folder structure */
+
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background: linear-gradient(0deg, #180032, #000000);
+  padding: var(--spacing-lg);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  min-height: 100vh;
+}
+
+.wrapper.light {
+  background: linear-gradient(0deg, #e6e0ff, #ffffff);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Heading */
+.dashboardHeading {
+  color: var(--white);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.dashboardHeading.light {
+  color: var(--light-text-primary);
+}
+
+/* Form */
+.dashboardForm {
+  width: 350px;
+
+  background-color: var(--dark-bg-primary);
+  border-radius: var(--border-radius-md);
+}
+
+.dashboardForm.light {
+  background-color: var(--light-bg-primary);
+}
+
+.dashboardInput {
+  width: 100%;
+  padding: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid var(--dark-bg-secondary);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--dark-bg-secondary);
+  color: var(--dark-text-primary);
+  font-size: var(--font-size-md);
+}
+
+.dashboardInput:focus {
+  outline: none;
+  border-color: var(--white);
+}
+
+.dashboardInput.light {
+  background-color: var(--white);
+  border-color: var(--light-border);
+  color: var(--light-text-primary);
+}
+
+.textInput {
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Checkboxes */
+.checkboxes {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboardCheckboxLabel {
+  display: flex;
+  align-items: center;
+  color: var(--dark-text-primary);
+}
+
+.dashboardCheckboxLabel.light {
+  color: var(--light-text-primary);
+}
+
+.dashboardCheckbox {
+  margin-right: var(--spacing-xs);
+}
+
+/* Date picker */
+.datePicker {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboardDateLabel {
+  margin-right: var(--spacing-sm);
+  font-weight: bold;
+  color: var(--dark-text-primary);
+}
+
+.dashboardDateLabel.light {
+  color: var(--light-text-primary);
+}
+
+.dashboardDateInput {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--dark-bg-secondary);
+  color: var(--dark-text-primary);
+  margin: 0 auto;
+}
+
+.dashboardDateInput:focus {
+  outline: none;
+  border-color: var(--white);
+}
+
+.dashboardDateInput.light {
+  background-color: var(--white);
+  border-color: var(--light-border);
+  color: var(--light-text-primary);
+}
+
+/* Submit buttons */
+.dashboardSubmit {
+  width: 100%;
+  padding: var(--spacing-sm);
+  background-color: var(--accent-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+  font-size: var(--font-size-md);
+}
+
+.dashboardSubmit.pressed {
+  background-color: var(--white);
+  cursor: not-allowed;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+}
+
+/* URL input form */
+.urlInputForm {
+  display: flex;
+  margin-top: var(--spacing-md);
+}
+
+.dashboardInputUrl {
+  height: 45px;
+  padding: 0 var(--spacing-sm);
+  border: 1px solid var(--accent-primary);
+  border-right: none;
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+  background-color: transparent;
+  color: var(--white);
+}
+
+.dashboardInputUrl:focus {
+  outline: none;
+  border-color: var(--white);
+}
+
+.dashboardSubmitUrl {
+  width: 45px;
+  height: 45px;
+  background-color: var(--accent-primary);
+  color: var(--white);
+  border: none;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  cursor: pointer;
+}
+
+
+
+/* Filter buttons */
+.dashboardFilterContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: var(--spacing-md);
+}
+
+.dashboardFilterButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.dashboardFilterButton {
+  padding: var(--spacing-sm);
+  background-color: var(--dark-bg-secondary);
+  border: 1px solid var(--dark-border);
+  color: var(--white);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.dashboardFilterButton.light {
+  background-color: #ffffff;
+  border-color: var(--light-border);
+  color: var(--light-text-primary);
+}
+
+.dashboardFilterButton.active {
+  background-color: var(--accent-primary);
+  color: var(--white);
+}
+
+/* Loading and messages */
+.dashboardLoading,
+.dashboardMessage {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  font-size: var(--font-size-lg);
+  color: white;
+
+}
+

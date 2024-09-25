@@ -1,0 +1,41 @@
+@import '../styles/variables.css'; /* Adjust the path based on your folder structure */
+
+/* View toggle button */
+.viewToggleButton {
+  width: 200px;
+  padding: var(--spacing-sm) var(--spacing-md); /* Added padding for better button feel */
+  margin: var(--spacing-lg) auto; /* Centered the button vertically */
+  background-color: var(--white);
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  color: var(--accent-primary);
+  transition: background-color var(--transition-speed), transform 0.2s, box-shadow 0.3s;
+}
+
+.viewToggleButton:hover {
+  background-color: var(--accent-primary);
+  color: var(--white);
+  transform: translateY(-4px); /* Slight lift on hover */
+}
+
+.viewToggleButton:active {
+  transform: translateY(0); /* Reset lift on active press */
+}
+
+.viewToggleButton.active {
+  background-color: var(--accent-primary);
+  color: var(--white);
+}
+
+.viewToggleButton.light {
+  background-color: var(--accent-primary);
+  color: var(--dark-text-primary);
+}
+
+.viewToggleButton.light.active {
+  background-color: var(--accent-secondary);
+  color: var(--white);
+}

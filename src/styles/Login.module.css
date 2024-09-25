@@ -1,0 +1,94 @@
+@import '../styles/variables.css'; /* Adjust the path based on your folder structure */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--black);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(-30deg, #e0e0fa, #ffffff);
+  border: 1px solid var(--gray-light);
+  border-radius: var(--border-radius-md);
+  width: 100%;
+  max-width: 400px;
+  min-height: 500px; /* Ensures the height is consistent */
+}
+
+.formContainer h1 {
+  color: #007bff; /* Login-specific color */
+  opacity: 0.6;
+  margin: 0 auto;
+}
+
+.formContainer h2 {
+  color: #007bff; /* Login-specific color */
+  opacity: 0.4;
+  margin: 0 auto;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.inputContainer {
+  padding: 10px 40px 10px 10px;
+  font-size: var(--font-size-md);
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  transition: border-color var(--transition-speed);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputContainer:focus {
+  border-color: #007bff; /* Login-specific focus color */
+}
+
+.submitButton {
+  padding: 10px;
+  background: #007bff; /* Login-specific button color */
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: background var(--transition-speed);
+}
+
+.submitButton:hover {
+  background: #0056b3; /* Login-specific hover color */
+}
+
+.errorMessage {
+  color: #d9534f; /* Login-specific error color */
+  font-size: var(--font-size-lg);
+  margin-top: var(--spacing-sm);
+}
+
+.registerTitle {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-lg);
+  color: #555; /* Login-specific color */
+  text-align: center;
+}
+
+.linkLogin {
+  color: #28a745; /* Login-specific link color */
+  text-decoration: none;
+  margin-left: var(--spacing-xs);
+  transition: color var(--transition-speed);
+}
+
+.linkLogin:hover {
+  color: #218838; /* Login-specific hover color */
+}

@@ -1,0 +1,161 @@
+@import '../styles/variables.css';
+
+.dashboardNotesContainer {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboardNotesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboardNoteItem {
+  border: 1px solid var(--dark-border);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  z-index: 100;
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+}
+
+.dashboardNoteItem:active {
+  background: linear-gradient(45deg, #1f1f1f, #2c2c2c);
+}
+
+.dashboardNoteItem:last-child {
+  margin-bottom: 0;
+}
+
+.dashboardNoteItem.light {
+  background: linear-gradient(0deg, #e6e0ff, #ffffff);
+  border-color: var(--accent-primary);
+  color: var(--dark-border);
+}
+
+.dashboardNoteItem small {
+  display: flex;
+  justify-content: space-between;
+  color: var(--dark-text-secondary);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-sm);
+}
+
+.dashboardNoteItem.light small {
+  color: var(--dark-bg-primary);
+}
+
+/* Due date */
+.noteDueDate {
+  font-size: var(--font-size-md);
+  color: var(--accent-secondary);
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.noteDueDate.light {
+  color: var(--accent-primary);
+}
+
+.noteDueDate p {
+  margin: 0;
+  padding: 0;
+}
+
+.fadedText {
+  opacity: 0.8;
+}
+
+.dashboardNoteItem.light {
+  color: var(--light-text-secondary);
+}
+
+.dashboardDeleteButton,
+.dashboardLikeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dashboardDeleteButton .icon,
+.dashboardLikeButton .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--white);
+}
+
+.dashboardDeleteButton.light .icon,
+.dashboardLikeButton.light .icon {
+  color: var(--accent-primary);
+}
+
+/* Row container */
+.rowContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  border-top: 1px solid var(--dark-border);
+}
+
+.leftButtonContainer {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rowContainer.buttons {
+  border-top: none;
+  padding-top: var(--spacing-xs);
+}
+
+/* Note content */
+.noteContent {
+  max-height: 40px;
+  overflow: hidden;
+  transition: max-height var(--transition-speed) ease-out;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-sm);
+  user-select: all;
+  color: var(--dark-text-primary);
+}
+
+.noteContent.light {
+  color: var(--dark-bg-primary);
+}
+
+.noteContent.expanded {
+  max-height: none;
+  padding-bottom: 4px;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  padding: 0;
+}
+
+.expandButton.light {
+  color: var(--light-text-primary);
+}
+
+/* Message */
+.dashboardMessage {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  font-size: var(--font-size-lg);
+  color: var(--dark-text-secondary);
+}
+
+.dashboardMessage.light {
+  color: var(--light-text-secondary);
+}
+

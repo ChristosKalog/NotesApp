@@ -1,0 +1,53 @@
+:root {
+    /* Dark theme colors */
+    --dark-bg-primary: #1f1f1f;
+    --dark-bg-secondary: #2c2c2c;
+    --dark-text-primary: #e0e0e0;
+    --dark-text-secondary: #888888;
+    --dark-border: #494949;
+  
+    /* Light theme colors */
+    --light-bg-primary: #f5f5f5;
+    --light-bg-secondary: #d6d6d6;
+    --light-text-primary: #333333;
+    --light-text-secondary: #666666;
+    --light-border: #dddddd;
+  
+    /* Accent colors */
+    --accent-primary: #6200ee;
+    --accent-secondary: #03dac6;
+    --accent-red: #ff4400;
+    --accent-green: #28a745;
+    --accent-green-dark: #218838;
+    --accent-link: #007bff;
+    --accent-link-hover: #0056b3;
+    --accent-error: #d9534f;
+    --gray-light: #dcdcdc;
+    --gray: #ccc;
+    --icon-color: #6c757d;
+  
+    /* Utility colors */
+    --white: #ffffff;
+    --black: #000000;
+  
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+  
+    /* Font sizes */
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+  
+    /* Border radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+  
+    /* Transitions */
+    --transition-speed: 0.3s;
+  }
+  

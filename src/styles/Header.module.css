@@ -1,0 +1,93 @@
+@import '../styles/variables.css'; /* Adjust the path based on your folder structure */
+
+/* Header */
+.header {
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.header.light {
+
+  border-bottom: 1px solid var(--light-border);
+}
+
+.dashboardHeading {
+  margin: 0;
+  padding: 0;
+  color: var(--dark-text-primary);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.dashboardHeading.light {
+  color: var(--light-text-primary);
+}
+
+/* Header buttons container */
+.headerButtons {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* Light mode button */
+.lightmodeButton {
+  width: 35px;
+  height: 35px;
+  background-color: var(--light-text-secondary);
+  color: var(--dark-text-primary);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.lightmodeButton:hover {
+  background-color: var(--accent-primary);
+  color: var(--white);
+}
+
+.lightmodeButton.light {
+  background-color: var(--accent-secondary);
+  color: var(--white);
+}
+
+.lightmodeButton.light:hover {
+  background-color: var(--accent-primary);
+}
+
+/* Logout button */
+.dashboardLogout {
+  width: 35px;
+  height: 35px;
+  background-color: var(--accent-red);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-speed);
+}
+
+.dashboardLogout:hover {
+  background-color: var(--accent-primary);
+}
+
+.dashboardLogout.light {
+  background-color: var(--accent-secondary);
+}
+
+.dashboardLogout.light:hover {
+  background-color: var(--accent-primary);
+}
