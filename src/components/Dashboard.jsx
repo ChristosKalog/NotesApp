@@ -49,7 +49,7 @@ function Dashboard() {
       const unsubscribe = fetchNotes();
       return () => unsubscribe(); // Cleanup subscription on unmount
     }
-  }, [auth.currentUser]);
+  }, []);
 
   const fetchUserProfile = async () => {
     try {
@@ -100,11 +100,11 @@ function Dashboard() {
       return notes.filter((note) => note.isShared);
     }
     return [];
-  }, [notes, filter, auth.currentUser]);
+  }, [notes, filter]);
 
-  const filteredNotesArray = Array.isArray(filteredNotes)
-    ? filteredNotes
-    : Array.from(filteredNotes);
+  // const filteredNotesArray = Array.isArray(filteredNotes)
+  //   ? filteredNotes
+  //   : Array.from(filteredNotes);
 
   const handleAddNote = async (e) => {
     e.preventDefault();

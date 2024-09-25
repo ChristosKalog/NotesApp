@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
-import { faCheckSquare as faCheckSquare } from "@fortawesome/free-regular-svg-icons";
-import { faSquare as faSquare } from "@fortawesome/free-regular-svg-icons";
+import { faCheckSquare } from "@fortawesome/free-regular-svg-icons";
+import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import { auth } from "../firebase";
 import styles from "../styles/NotesList.module.css"; // Updated to use CSS modules
 import { format } from "date-fns"; // Import format from date-fns
